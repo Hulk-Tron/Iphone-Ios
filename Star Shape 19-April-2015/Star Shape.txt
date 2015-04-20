@@ -1,0 +1,20 @@
+Import UIKit
+@IBDesignable
+Class MyCustomClass : UIView {
+ override func drawRect(rect:CGRect){
+var pencil = UIBezierpath()
+pencil.moveToPoint(CGpoint(x:100,y:100))
+pencil.addToPoint(CGpoint(x:125,y:50))
+pencil.addToPoint(CGpoint(x:145,y:100))
+pencil.addToPoint(CGpoint(x:190,y:100))
+pencil.addToPoint(CGpoint(x:160,y:140))
+pencil.addToPoint(CGpoint(x:178,y:180))
+pencil.addToPoint(CGpoint(x:125,y:155))
+pencil.addToPoint(CGpoint(x:80,y:180))
+pencil.addToPoint(CGpoint(x:90,y:140))
+pencil.addToPoint(CGpoint(x:54,y:100))
+pencil.closePath()
+UIColor.blackcolor().SetStroke
+pencil.Stroke
+}
+}
